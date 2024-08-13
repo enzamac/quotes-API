@@ -14,6 +14,9 @@ router.post('/', authorController.createNewAuthor)
 router.get('/:id', authorController.getAuthorById);
 
 // Delete an Author
-router.delete('/:id', authorController.deleteAuthor);
+router.delete('/:id', authorController.deleteAuthorById);
+
+// Update an Author
+router.put('/:id', authorController.updateAuthorById);
 
 module.exports = router
